@@ -9,5 +9,7 @@ data/accidents/*.csv
 
 # Ignore pycache directories
 __pycache__/data/accidents/*.csv
-data/accidents/*.parquet
+__pycache__/*.xlsx
+data/accidents/*.csv
+data/accidents/
 *.xlsx
