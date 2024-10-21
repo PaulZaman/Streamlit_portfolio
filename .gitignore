@@ -1,0 +1,11 @@
+venv/
+/venv
+
+# Ignore all CSV files in data/accidents directory
+data/accidents/*.csv
+
+# Ignore all XLSX files in the entire repository
+*.xlsx
+
+# Ignore pycache directories
+__pycache__/
