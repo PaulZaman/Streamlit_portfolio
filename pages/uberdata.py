@@ -6,6 +6,7 @@ import plotly.express as px
 from datalib.plots import histogram_with_stats
 from config import UBERLOGO
 import os
+from st_aggrid import AgGrid
 
 def get_data():
     data = pd.read_csv('data/uberdata/uberdata.csv')
@@ -61,7 +62,7 @@ def title_and_intro(data):
 
     # Dataset presentation
     center_h2('The Dataset Presentation')
-    st.write(data.head(10))  # Display the first 10 rows
+    AgGrid(data.head(10), fit_columns_on_grid_load=True)  # Display the first 10 rows
     st.markdown('---')
 
     # Dataset description

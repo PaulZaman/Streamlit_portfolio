@@ -17,11 +17,18 @@ st.set_page_config(
     page_icon=FAVICON_LOGO,
     layout="wide", 
     initial_sidebar_state="collapsed",
-    # set to light mode
-    theme="light"
 )
 
-
+st.markdown(
+    """
+<style>
+    [data-testid="stSidebarCollapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
 
 # Pages
 # Define the pages
