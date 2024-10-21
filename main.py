@@ -17,6 +17,8 @@ st.set_page_config(
     page_icon=FAVICON_LOGO,
     layout="wide", 
     initial_sidebar_state="collapsed",
+    # set to light mode
+    theme="light"
 )
 
 
