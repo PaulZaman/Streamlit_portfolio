@@ -129,7 +129,7 @@ def intro(caracteristiques, usagers):
 		accidents_per_month_year,
 		x='month_year',
 		y='count',
-		title="",
+		title=" ",
 		labels={'month_year': 'Month-Year', 'count': 'Number of Accidents'},
 		template="plotly_dark",
 		color='count',

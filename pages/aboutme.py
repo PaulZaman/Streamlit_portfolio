@@ -40,6 +40,8 @@ def get_timeline():
         x_end="End", 
         y="Task", 
         hover_data=["Description"],  # Show descriptions on hover
+        color="Task",  # Color by task
+        color_discrete_sequence=px.colors.qualitative.Bold 
     )
 
     # Update the hovertemplate to show more personalized information
